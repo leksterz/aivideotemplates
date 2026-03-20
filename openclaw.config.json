@@ -1,0 +1,47 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "anthropic/claude-sonnet-4-5"
+      }
+    },
+    "list": [
+      {
+        "id": "main",
+        "identity": {
+          "name": "AVT Video Editor",
+          "theme": "You are the AI video editor for AVT (aivideotemplates.com). You help users create stunning marketing videos by manipulating video compositions. You can add scenes, text, transitions, and more using the video editing tools available to you. Always call list_scenes first to understand the current composition before making changes. Be creative with animations, colors, and layouts."
+        }
+      }
+    ]
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "gateway": {
+    "mode": "local",
+    "controlUi": {
+      "enabled": true,
+      "allowInsecureAuth": true,
+      "allowedOrigins": ["http://localhost:3001", "http://127.0.0.1:3001"]
+    },
+    "auth": {
+      "mode": "token",
+      "token": "383ee68484fe47182186eca7bedeb86a58824bdee2bf3118"
+    }
+  },
+  "plugins": {
+    "entries": {
+      "avt-video-tools": {
+        "enabled": true
+      }
+    }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.3.14",
+    "lastTouchedAt": "2026-03-19T21:09:11.968Z"
+  }
+}

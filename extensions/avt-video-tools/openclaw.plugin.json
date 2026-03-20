@@ -1,0 +1,14 @@
+{
+  "id": "avt-video-tools",
+  "name": "AVT Video Tools",
+  "description": "Video composition editing tools for the AVT video editor — add scenes, text, transitions, and more",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "enabled": { "type": "boolean", "default": true },
+      "stateDir": { "type": "string", "description": "Directory to store composition state" }
+    }
+  }
+}

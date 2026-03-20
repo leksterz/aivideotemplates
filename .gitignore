@@ -138,3 +138,9 @@ docs/superpowers
 
 # Deprecated changelog fragment workflow
 changelog/fragments/
+.env
+
+# AVT runtime state & uploads (don't commit media files)
+.avt/
+ui/public/uploads/
+ui/dist/
